@@ -1,30 +1,61 @@
+@font-face
+  font-family: 'Noto Sans'
+  src: url('/font/NotoSansJP-Light.otf') format('opentype')
+.notoSansJP
+  font-family: 'Noto Sans'
+
 body
-  background-image: url(/home/uncle_mo.png)
-  background-repeat: no-repeat
-  background-position: top center
   background-color: #f4ca20
   margin: 0
-  font-family: sans-serif
+  font-family: 'Noto Sans', sans-serif
 #home
+  background-image: url(/home/uncle_mo.png)
+  background-repeat: no-repeat
+  background-position: top right
   position: relative
   width: 1000px
-  margin: 0 auto
-h1
-  position: absolute
-  top: 150px
-  left: 220px
-  background-image: url(/home/logo.png)
-  background-repeat: no-repeat
-  width: 297px
-  height: 99px
-  text-align: center
-  text-indent: -9999px
-  color: #ccc
-p
-  position: absolute
-  top: 285px
-  left: 280px
-  margin: 0
-  width: 297px
-  color: #3a2b21
-  font-size: 24px
+  height: 620px
+  margin: 100px auto
+  h1
+    position: absolute
+    top: 92px
+    left: 180px
+    background-image: url(/home/logo.png)
+    background-repeat: no-repeat
+    width: 298px
+    height: 96px
+    text-align: center
+    text-indent: -9999px
+    color: #ccc
+  p
+    position: absolute
+    top: 240px
+    left: 205px
+    margin: 0
+    width: 298px
+    color: #3a2b21
+    font-size: 22px
+    letter-spacing: 0.2em
+  .download
+    position: absolute
+    top: 320px
+    left: 225px
+    width: 213px
+    .appstore
+      background-image: url(/home/download_appstopre.png)
+      background-repeat: no-repeat
+      background-position: center center
+      height: 58px
+      margin: 0 auto
+      text-indent: -9999px
+    .commingsoon
+      position: absolute
+      top: -16px
+      background-image: url(/home/commingsoon.png)
+      background-repeat: no-repeat
+      background-position: center center
+      width: 213px
+      height: 90px
+      text-indent: -9999px
+
+
