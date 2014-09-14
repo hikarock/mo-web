@@ -14,6 +14,25 @@
   <meta content="Moは仮想通貨を簡単にやりとりできる入門心理ゲームアプリです。" property="og:description" />
   <meta content="Mo - 仮想通貨の入門ゲーム" property="og:site_name" />
   <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <script src="//js.pusher.com/2.2/pusher.min.js" type="text/javascript"></script>
+  <script>
+  var pusher = new Pusher('712e8c937a3771ff8ffa');
+  var channel = pusher.subscribe('mo-multicast');
+  channel.bind('someone_transfer', function(data) {
+    var width = $('body').width();
+    var height = $('body').height() + 150;
+    var left = getRandomInt(0, width - 75);
+    $('.coin').animate({
+      'top': height,
+      'left': left
+    }, 1500, function() {
+      $('.coin').css('top', '-150');
+    });
+  });
+  function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  </script>
 </head>
 
 <body>
