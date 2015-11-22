@@ -1,0 +1,117 @@
+@charset 'UTF-8';
+@import 'nib'
+
+@font-face
+  font-family: 'Noto Sans'
+  src: url('/font/NotoSansJP-Light.otf') format('opentype')
+.notoSansJP
+  font-family: 'Noto Sans'
+
+body
+  background-color: #f4ca20
+  margin: 0
+  font-family: 'Noto Sans', sans-serif
+  #home
+    background-image: url(/img/uncle_mo.png)
+    background-repeat: no-repeat
+    background-position: top right
+    position: relative
+    width: 1000px
+    height: 620px
+    margin: 100px auto
+    h1
+      position: absolute
+      top: 92px
+      left: 180px
+      background-image: url(/img/logo.png)
+      background-repeat: no-repeat
+      width: 298px
+      height: 96px
+      text-align: center
+      text-indent: -9999px
+    p
+      position: absolute
+      top: 240px
+      left: 205px
+      margin: 0
+      width: 298px
+      color: #3a2b21
+      font-size: 22px
+      letter-spacing: 0.2em
+    .download
+      position: absolute
+      top: 320px
+      left: 225px
+      width: 213px
+      .appstore
+        background-image: url(/img/download_appstopre.png)
+        background-repeat: no-repeat
+        background-position: center center
+        height: 58px
+        margin: 0 auto
+        text-indent: -9999px
+      .commingsoon
+        position: absolute
+        top: -16px
+        background-image: url(/img/commingsoon.png)
+        background-repeat: no-repeat
+        background-position: center center
+        width: 213px
+        height: 90px
+        text-indent: -9999px
+  .coin
+    width: 150px
+    height: 150px
+    z-index: 3000
+    position: absolute
+    top: -150px
+    left: 200px
+
+@media screen and (max-width: 768px)
+  body
+    #home
+      background-image: url(/img/uncle_mo_sp.png)
+      background-position: top center
+      background-size(120px 135px)
+      position: static
+      width: 320px
+      height: auto
+      margin: 20px auto
+      padding: 160px 0 0
+      h1
+        position: static
+        top: 0
+        left: 0
+        background-image: url(/img/logo_sp.png)
+        background-size(195px 64px)
+        width: 195px
+        height: 64px
+        margin: 0 auto
+      p
+        position: static
+        top: 0
+        left: 0
+        margin: 10px auto 0
+        width: 195px
+        font-size: 16px
+        text-align: center
+        letter-spacing: 0.1em
+      .download
+        position: relative
+        top: 0
+        left: 0
+        width: 213px
+        margin: 30px auto 0
+        .appstore
+          background-image: url(/img/download_appstopre_sp.png)
+          background-size(213px 58px)
+          width: 213px
+          height: 58px
+        .commingsoon
+          position: absolute
+          background-image: url(/img/commingsoon_sp.png)
+          background-size(213px 91px)
+          width: 213px
+          height: 91px
+
+

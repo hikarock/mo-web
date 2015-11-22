@@ -1,0 +1,24 @@
+{
+  "name": "mo-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hikarock/mo-web.git"
+  },
+  "author": "hikarock <i@hika69.com> (http://blog.hika69.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hikarock/mo-web/issues"
+  },
+  "homepage": "https://github.com/hikarock/mo-web#readme",
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "nib": "^1.1.0"
+  }
+}
