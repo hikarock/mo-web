@@ -5,8 +5,8 @@ channel.bind('someone_transfer', function(data) {
   var height = $(window).height() + 150;
   var left = getRandomInt(0, width - 75);
   $('.coin').animate({
-    'top': height,
-    'left': left
+    top: height,
+    left: left
   }, 1500, function() {
     $('.coin').css('top', '-150');
   });

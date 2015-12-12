@@ -4,13 +4,13 @@ var nib         = require('nib');
 var browserSync = require('browser-sync').create();
 
 gulp.task('serve', ['stylus'], function() {
-    browserSync.init({
-        server: {
-            baseDir: "./public"
-        }
-    });
-    gulp.watch("src/*.styl", ['stylus']);
-    gulp.watch("public/*.html").on('change', browserSync.reload);
+  browserSync.init({
+    server: {
+      baseDir: "./public"
+    }
+  });
+  gulp.watch("src/*.styl", ['stylus']);
+  gulp.watch("public/*.html").on('change', browserSync.reload);
 });
 
 gulp.task('stylus', function () {
@@ -20,7 +20,7 @@ gulp.task('stylus', function () {
       compress: true,
       linenos: false
     }))
-    .pipe(gulp.dest('./public/css'));
+  .pipe(gulp.dest('./public/css'));
 });
 
 gulp.task('default', ['serve']);
